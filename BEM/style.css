@@ -1,0 +1,95 @@
+body{
+  background-image: url(http://www.thecamcritic.com/wp-content/uploads/2015/09/tre_flip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#veld{
+  background-color: black;
+  opacity: 0.8;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.infoTekst{
+  border: 1px solid #ccc;
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+
+}
+
+.subVeld1{
+  min-height: 240px;
+  color: white;
+  padding: 3%;
+  position: relative;
+
+
+    &img{
+      width: 55%;
+      left: 22%;
+      top: 8%;
+      opacity: 0.5;
+      position: absolute;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+    }
+
+
+    &p{
+      width: 45%;
+      right: 3%;
+      top: 47%;
+      position: absolute;
+    }
+
+    &h2{
+      opacity: 0;
+      right: 19%;
+      transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      position: absolute;
+    }
+
+    &:hover img{
+      opacity: 1;
+      left: 4%;
+      width: 40%;
+      top: 20%;
+
+    }
+
+    &:hover h2{
+      opacity: 1;
+    }
+
+    &:hover .infoTekst{
+      opacity: 1;
+    }
+
+}
+
+.subVeld2{
+  min-height: 240px;
+  color: white;
+  padding: 3%;
+  position: relative;
+
+& p{
+  width: 50%;
+  float: left;
+}
+
+& img{
+  width: 40%;
+}
+
+&:hover .infoTekst{
+  display: block;
+}
